@@ -1,0 +1,64 @@
+#+TITLE: Basic-Dockerfile
+#+AUTHOR: Hitesh Sharma
+#+OPTIONS: toc:nil
+
+* 🚀 Project Overview
+
+This repository contains a basic Dockerfile to help beginners understand the fundamentals of Docker. The project demonstrates:
+
+- Creating a Dockerfile
+- Building a Docker image
+- Running a container from the image
+
+* 🌐 Project URL
+
+- [[https://roadmap.sh/projects/basic-dockerfile][Roadmap Project Page]]
+
+* 📁 Repository Contents
+
+#+begin_src
+.
+├── Dockerfile
+└── README.md
+#+end_src
+
+_Note: The application code should be placed in this directory if needed._
+
+* 🐳 Prerequisites
+
+- [[https://docs.docker.com/get-docker/][Docker]] installed on your machine
+
+* 🛠️ Build the Docker Image
+
+To build the Docker image, run the following command in the repository's root directory:
+
+#+begin_src bash
+docker build -t basic-dockerfile .
+#+end_src
+
+This command creates an image named =basic-dockerfile=.
+
+* ▶️ Run the Docker Container
+
+To run the container based on the image you built:
+
+#+begin_src bash
+docker run basic-dockerfile
+#+end_src
+
+If your Dockerfile includes exposed ports or specific commands (like running a server), you may want to use:
+
+#+begin_src bash
+docker run -p 8080:80 basic-dockerfile
+#+end_src
+
+Replace =8080:80= with appropriate port mappings as needed.
+
+* 📌 Notes
+
+- This is a minimal example intended for educational purposes.
+- Feel free to extend it with your own application code, entrypoints, and dependencies.
+
+* 👤 Author
+
+- *Hitesh Sharma* – [[https://github.com/hiteshtg][GitHub Profile]]
